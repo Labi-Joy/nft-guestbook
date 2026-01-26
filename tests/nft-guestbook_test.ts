@@ -98,6 +98,7 @@ Clarinet.test({
   name: 'Test payment verification - insufficient balance',
   fn(chain: Chain, accounts: Map<string, Account>) {
     const wallet1 = accounts.get('wallet_1')!;
+    const deployer = accounts.get('deployer')!;
     const message = "Test message";
     
     // Drain wallet balance to less than mint price
